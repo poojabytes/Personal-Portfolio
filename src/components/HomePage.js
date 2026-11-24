@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Sparkles, ChevronRight, FolderOpen, Download, Coffee, Heart, Zap, BookOpen, Code } from 'lucide-react';
 import FloatingParticles from './FloatingParticles';
-import profile from '../assets/Image_2-removebg-preview.png';
+import profile from '../assets/profile-photo.jpg';
 
 const HomePage = ({ isAnimated, typedText, showParticles, setCurrentPage, darkMode }) => (
   <div className={`min-h-screen pt-20 relative overflow-hidden transition-all duration-500 ${darkMode ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900' : 'bg-gradient-to-br from-purple-50 via-white to-pink-50'}`}>
@@ -128,7 +128,7 @@ const HomePage = ({ isAnimated, typedText, showParticles, setCurrentPage, darkMo
             </div>
             <div className={`relative z-10 w-96 h-96 rounded-full flex items-center justify-center shadow-2xl ${darkMode ? 'bg-gradient-to-br from-gray-600 via-gray-500 to-gray-700' : 'bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400'}`}>
               <div className={`w-80 h-80 rounded-full flex items-center justify-center shadow-inner overflow-hidden ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
-                <img src={profile} alt="Profile" className="w-full h-full object-contain rounded-full" />
+                <img src={profile} alt="Profile" className="w-full h-full object-cover object-top rounded-full" />
               </div>
             </div>
             <div className="absolute top-20 left-20 animate-float delay-1000">
